@@ -1,15 +1,11 @@
 #include <stdio.h>
 
-  /* Подсчет вводимых символов; 1-я версия */
+/* Подсчет вводимых символов; 2-я версия */
 
-int main() {
-	long nc;
-	nc = 0;
+main() {
+	double nc;
 
-	while (getchar() != EOF)
-	{
-		++nc;
-	}
+	for (nc = 0; getchar() != EOF; ++nc);
 
-	printf("%ld\n", nc);
+	printf("%.0f\n", nc);
 }
